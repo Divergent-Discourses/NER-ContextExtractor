@@ -154,4 +154,9 @@ Outputs:
 - finalised_entities (json) - lists finalised entities alongside their 5 extracted contextual examples
 - context_sources (json) - lists each entity alongside the .txt file name in which each extracted context was found.
 
-**Before running, open entity_context_finder.py and modify the listed input/output filepaths (lines 291-296).** 
+**Before running, open entity_context_finder.py and modify the listed input/output filepaths (lines 291-296).**
+
+**If running the short entity version of the code (entity_context_finder_2syll.py):
+- Install [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main) and **
+- Replace the Botok base_dir path on line 58 
+
