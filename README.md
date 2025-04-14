@@ -167,7 +167,7 @@ entity-context_finder_2syll also extracts contextual examples of listed entities
 However, it obtains **best results on shorter entities** (e.g. <=2 syllables). It tokenises text in the corpus using [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main) before searching for exact-match tokens then extracts the surrounding shad-to-shad context. 
 
 - Alter desired_num_contexts you want to find per entity (default=2) --> line 50
-- Install [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main) and
+- Install [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main)
 - Replace the Botok base_dir path --> line 58
 - Modify listed input/output filepaths --> lines 382-387
 
