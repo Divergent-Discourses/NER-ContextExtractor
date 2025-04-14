@@ -154,9 +154,25 @@ Outputs:
 - finalised_entities (json) - lists finalised entities alongside their 5 extracted contextual examples
 - context_sources (json) - lists each entity alongside the .txt file name in which each extracted context was found.
 
-**Before running, open entity_context_finder.py and modify the listed input/output filepaths (lines 291-296).**
+## entity_context_finder.py
+Before running:
 
-**If running the short entity version of the code (entity_context_finder_2syll.py):
-- Install [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main) and **
-- Replace the Botok base_dir path on line 58 
+- Alter desired_num_contexts you want to find per entity (default=5) --> line 47
+- Modify the listed input/output filepaths --> lines 291-296
 
+
+## entity_context_finder_2syll.py
+entity-context_finder_2syll also extracts contextual examples of listed entities from a provided corpus. 
+
+However, it obtains **best results on shorter entities** (e.g. <=2 syllables). It tokenises text in the corpus using [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main) before searching for exact-match tokens then extracts the surrounding shad-to-shad context. 
+
+- Alter desired_num_contexts you want to find per entity (default=2) --> line 50
+- Install [modern-botok](https://github.com/Divergent-Discourses/modern-botok/tree/main) and
+- Replace the Botok base_dir path --> line 58
+- Modify listed input/output filepaths --> lines 382-387
+
+## Copyright
+
+**NER-ContextExtractor** was developed by Christina Sabbagh of SOAS University of London for the Divergent Discourses project. The project is a joint study involving SOAS University of London and Leipzig University, funded by the AHRC in the UK and the DFG in Germany.
+
+Please acknowledge the project in any use of these materials. Copyright for the project resides with the two universities.
